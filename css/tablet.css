@@ -1,0 +1,131 @@
+@media screen and (min-width:768px) and (max-width:1023px){
+    .alert{
+        display: none;
+    }
+
+    .containerHeader{
+        width: 90%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .title{
+        display: block;
+    }
+
+    .init{
+        flex-direction: column;
+    }
+
+    .sectionPage hr {
+        display: none;
+    }
+
+    .sectionPage{
+        display: flex;
+        align-items: center;
+    }
+
+    .sectionActive{
+        width: 29%;
+    }
+
+    .sectionDisable{
+        width: 36%;
+    }
+
+    .arrowRightDisable{
+        display: block;
+        font-size: 2em;
+    }
+
+    .arrowDownActive{
+        display: none;
+    }
+
+    .heroOne{
+        gap: 2rem;
+    }
+
+    .finalSectionPage{
+        display: block;
+    }
+
+    .welcome {
+        display: none;
+    }
+
+    .imagePresentation{
+        display: block;
+    }
+
+    .imagePresentation img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .info hr {
+        display: none;
+    }
+
+    .titleInfo{
+        justify-content: left;
+    }
+
+    .hrDelivery {
+        display: none;
+    }
+
+    .deliveryTitle{
+        justify-content: left;
+    }
+
+    .optionDelivery{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .delivery{
+        width: 100%;
+    }
+
+    .delivery button {
+        color: #000;
+    }
+
+    .hrNearestPoint {
+        display: none;
+    }
+
+    .nearestTitle {
+        justify-content: left;
+    }
+
+    .nearest{
+        width: 100%;
+    }
+
+    .point {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .option {
+        width: 48%;
+    }
+
+    .btnHeroOne{
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    .infoFooter{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    
+
+}

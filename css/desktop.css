@@ -1,0 +1,207 @@
+@media screen and (min-width:1024px){
+    .alert {
+        display: none;
+    }
+
+    .containerHeader{
+        width: 85%;
+    }
+
+    .phoneHeader{
+        display: block;
+    }
+
+    .phone{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .telephone a {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .textPhone{
+        display: flex;
+        justify-content: right;
+        align-items: end;
+    }
+
+    .textPhone p{
+        color: #c6c6c6;
+    }
+
+    .menuHeader{
+        display: none;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    .title{
+        display: block;
+    }
+
+    .init{
+        flex-direction: column;
+    }
+
+    .sectionPage{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .arrowRightDisable{
+        display: block;
+        font-size: 2em;
+    }
+
+    .arrowDownActive{
+        display: none;
+    }
+
+    .sectionActive{
+        align-items: center;
+        justify-content: space-between;
+        width: 23%;
+    }
+
+    .sectionDisable{
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    .finalSectionPage{
+        display: block;
+    }
+
+    .presentation{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .imagePresentation{
+        display: block;
+        width: 50%;
+    }
+
+    .welcome{
+        width: 50%;
+        height: 20vh;
+        justify-content: left;
+    }
+
+    .imagePresentation img {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .heroContainer{
+        flex-direction: row;
+    }
+
+    .heroOne{
+        width: 50%;
+    }
+
+    .info hr {
+        display: none;
+    }
+
+    .titleInfo{
+        justify-content: left;
+    }
+
+    .deliveryTitle{
+        justify-content: left;
+    }
+
+    .form{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form input {
+        width: 48%;
+    }
+
+    .specialForm a {
+        left: 38%;
+    }
+
+    .optionDelivery {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hrDelivery {
+        display: none;
+    }
+
+    .delivery{
+        width: 100%;
+    }
+
+    .delivery button{
+        color: #000;
+    }
+
+    .nearestTitle{
+        justify-content: left;
+    }
+
+    .hrNearestPoint{
+        display: none;
+    }
+
+    .point{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .option{
+        width: 55%;
+    }
+
+    .btnHeroOne{
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+
+    .containerFooter {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .derechos {
+        display: block;
+    }
+    
+    .derechosFinal{
+        display: none;
+    }
+
+    .lineaFooterFinal{
+        display: none;
+    }
+
+    .linksFooter{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+
+    .lFooter{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        width:auto;
+    }
+
+}
