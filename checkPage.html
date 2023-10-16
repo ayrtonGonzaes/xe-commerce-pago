@@ -15,18 +15,15 @@
 <body>
     <header>
         <div class="alert">
-            <p>App exclusive! 33% OFF <i class="bi bi-arrow-right"></i></p>
-
+            <button class="headerExclusive">App exclusiva 33% off <i class="bi bi-arrow-right arrowRight"></i></button>
         </div>
 
         <div class="containerHeader">
 
 
             <div class="logoHeader">
-
                 <img src="./img/logoX.png" alt="Logo">
                 <p>X</p>
-
             </div>
 
             <div class="phoneHeader">
@@ -50,11 +47,115 @@
             <div class="menuHeader">
 
                 <div class="search">
-                    <button class="searchBtn"> <i class="bi bi-search searchIcon"></i> <input type="search" class="searchInput"></input> Busqueda</button>
+                    <form action="" class="formSearch">
+                        <button><i class="bi bi-search iconSearch"></i></button>
+                        <input type="text" name="" id="" placeholder="Busqueda">
+                    </form>
                 </div>
 
-                <div class="menu">
-                    <button><i class="bi bi-list menuIcon"></i></button>
+                <div class="menuHamburger">
+                    <button id="openHamburger"><i class="bi bi-list iconMenu"></i></button>
+
+                </div>
+
+                <div class="hamburgerMenu" id="hamburger">
+
+                    <div class="hamburgerContainerHeader">
+
+                        <div class="logoHeaderHamburger">
+
+                            <img src="./img/logoX.png" alt="logo adiddas">
+                            <p>X</p>
+            
+                        </div>
+            
+                        <div class="btnHamburguer">
+            
+                            <div class="btnTraslate">
+                                <button><i class="bi bi-translate"></i> eng <i class="bi bi-arrow-down"></i></button>
+            
+                            </div>
+            
+                            <div class="btnDollar">
+                                <button><i class="bi bi-currency-dollar"></i> usd <i class="bi bi-arrow-down"></i></button>
+                            </div>
+            
+                        </div>
+                    </div>
+
+                    <div class="containerHamburgerContent">
+                        <div class="element">
+                            <div class="section">
+                                <a href="#">Home Page</a>
+                                <button><i class="bi bi-arrow-right arrow-right"></i></button> 
+                                    
+                            </div>
+            
+            
+                            <div class="img">
+                                <img src="./img/checkPage_photo.jpg" alt="">
+                            </div>
+                        </div>
+            
+            
+                        <div class="element">
+                            <div class="img">
+                                <img src="./img/checkPage_photo.jpg" alt="">
+                            </div>
+            
+                            <div class="section">
+                                <a href="#">Catalog</a>
+                                <button><i class="bi bi-arrow-right arrow-right"></i></button> 
+                                    
+                            </div>
+                        </div>
+            
+                        <div class="element">
+                            <div class="section">
+                                <a href="#">Contactos</a>
+                                <button><i class="bi bi-arrow-right arrow-right"></i></button> 
+                            </div>
+            
+                            <div class="img">
+                                <img src="./img/checkPage_photo.jpg" alt="">
+                            </div>
+                        </div>
+            
+                        <div class="element">
+                            <div class="img">
+                                <img src="./img/checkPage_photo.jpg" alt="">
+                            </div>
+            
+                            <div class="section">
+                                <a href="#">Preguntas frecuentes</a>
+                                <button><i class="bi bi-arrow-right arrow-right"></i></button> 
+                                    
+                            </div>
+                        </div>
+            
+                        <div class="element">
+                            <div class="section">
+                                <a href="#">Perfil</a>
+                                <button><i class="bi bi-arrow-right arrow-right"></i></button> 
+                                    
+                            </div>
+            
+                            <div class="img">
+                                <img src="./img/checkPage_photo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footerHamburgerContainer">
+                        <div class="textFooter">
+                            <p>No te detengas hasta que estés orgullosa</p>
+                        </div>
+            
+                        <div class="iconFooter">
+                            <button id="closeHamburger"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -70,8 +171,10 @@
                 <div class="infoPersonal">
 
                     <div class="text">
-                        <span class="colorSpecial"><h3>Inicio <i class="bi bi-arrow-right"></i> </h3></span>
-                        <span class="colorSpecial"><h3>Mi bolsa <i class="bi bi-arrow-right"></i> </h3></span>
+                        <nav class="navInfoPersonal">
+                            <a href="#">Inicio <i class="bi bi-arrow-right"></i></a>
+                            <a href="#">Mi bolsa <i class="bi bi-arrow-right"></i></a>
+                        </nav>
                         <h3>Pagina de pago</h3>
                     </div>
 
@@ -135,7 +238,7 @@
 
                 <div class="heroContainer">
 
-                    <div class="heroOne">
+                    <form class="heroOne">
 
                         <div class="info">
 
@@ -145,7 +248,7 @@
 
                             <hr>
 
-                            <form action="">
+                          
 
                                 <div class="form">
                                     <input type="text" placeholder="Primer Nombre*">
@@ -163,7 +266,7 @@
                                     <input type="tel" placeholder="Numero de Telefono *">
                                 </div>
 
-                            </form>
+                            
 
                         </div>
 
@@ -178,12 +281,12 @@
                             <div class="optionDelivery">
 
                                 <div class="delivery">
-                                    <button>Levantar</button>
+                                    <button type="button">Levantar <i class="bi bi-check2-square check"></i></button>
                                     <hr>
                                 </div>
 
                                 <div class="delivery">
-                                    <button>Levantar <i class="bi bi-check2-square check"></i></button>
+                                    <button type="button">Levantar <i class="bi bi-check2-square check"></i></button>
                                     <hr>
                                 </div>
 
@@ -203,11 +306,11 @@
 
                                 <div class="point">
 
-                                    <div class="option">
+                                    <button type="button" class="option">
 
                                         <div class="optionTitle">
                                             <h3>Trc "caravan"</h3>
-                                            <i class="bi bi-check2-square check"></i>
+                                            <i class="bi bi-check2-square checkTwo"></i>
                                         </div>
 
                                         <div class="optionText">
@@ -216,12 +319,12 @@
                                         
                                         <span class="colorSpecial"><p>Martes - Domingo, 10:00 - 20:00</p></span>
                                         <hr>
-                                    </div>
+                                    </button>
 
-                                    <div class="option">
+                                    <button type="button" class="option">
                                         <div class="optionTitle">
                                             <h3>Trc "Most city"</h3>
-                                            <i class="bi bi-check2-square check"></i>
+                                            <i class="bi bi-check2-square checkTwo"></i>
                                             
                                         </div>
 
@@ -231,7 +334,7 @@
                                             
                                         </div>
                                         <hr>
-                                    </div>
+                                    </button>
 
                                 </div>
 
@@ -251,7 +354,7 @@
 
                         </div>
                         
-                    </div>
+                    </form>
                     
                     <hr>
                    
@@ -409,7 +512,7 @@
             <div class="infoFooter">
         
                  <div class="logo">
-                    <img src="./img/logoX.png" alt="logo">
+                    <img src="./img/logoX.png" alt="">
                     <p>X</p>
                  </div>
         
@@ -462,5 +565,6 @@
         </div>
 </footer>
     
+<script src="./js/checkpage.js"></script>
 </body>
 </html>

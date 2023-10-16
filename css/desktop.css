@@ -106,6 +106,9 @@
     }
 
     .heroOne{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 50%;
     }
 
@@ -163,6 +166,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1.5rem;
     }
 
     .option{
@@ -171,7 +175,7 @@
 
     .btnHeroOne{
         flex-direction: row;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .containerFooter {

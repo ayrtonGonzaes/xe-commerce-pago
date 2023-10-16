@@ -7,6 +7,38 @@
         width: 90%;
     }
 
+    .hamburgerMenu{
+        width: 100%;
+    }
+
+    .hamburgerContainerHeader{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contianerHamburgerContent{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .img img{
+        height: 20vh;
+    }
+
+    .footerHamburgerContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .textFooter{
+        display: block;
+    }
+
+
     .container{
         width: 90%;
     }

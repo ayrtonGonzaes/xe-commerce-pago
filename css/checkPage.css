@@ -56,6 +56,43 @@ hr {
     padding: 5px 0;
 }
 
+
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.headerExclusive {
+    min-width: 130px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.headerExclusive:hover {
+    background: #fff;
+    color: #000;
+}
+
+.headerExclusive:focus{
+    background-color: #fff;
+    color: #000;
+}
+
 .colorSpecial {
     color: #c6c6c6;
 }
@@ -68,55 +105,344 @@ hr {
     display: none;
 }
 
-.form input {
-    padding: 15px ;
-    border: 2px solid #fff;
-    border-bottom: 2px solid #c6c6c6;
-    transition: all 0.3s ease;
+.menuHeader{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
 }
 
-.form input:hover {
-    border: 2px solid #c6c6c6;
-    padding: 15px;
+.search{
+    display: flex;
+    align-items: center;
+    border: 2px solid #2a2a2a;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    padding: 0px 15px;
+    height: 40px;
+    width: 40%;
+    transition: all 0.5s ease;
 }
 
-.form input:focus{
-    border: 2px solid #3a3a3a;
-    border-radius: 5px;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-
-.specialForm input{
-    padding: 15px;
-    border: 2px solid #fff;
-    border-bottom: 2px solid #c6c6c6 ;
+.search:hover{
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
-.specialForm input:hover{
-    padding: 15px;
-    border: 2px solid #c6c6c6;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.specialForm input:focus{
+.search:focus{
     border: 2px solid #3a3a3a;
     border-radius: 5px;
     outline: none;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.formSearch{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.formSearch > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.iconSearch{
+    color: #2a2a2a;
+    font-size: 1.2em;
+}
+
+.formSearch > input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    text-align: left;
+}
+
+.formSearch > input:hover{
+    width: 100%;
+    text-align: right;
     transition: all 0.3s ease;
 }
 
+.formSearch > input:focus{
+    text-align: left;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+/*
 .check {
     color: #00C514;
     font-size: 1.5rem;
 }
-
+*/
+.menuHamburger > button {
+    padding: 3px 10px;
+    background-color: transparent;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+    /*position: relative;*/
+    display: inline-block;
+    outline: none;
+    transition: all 0.3s ease;
+}
+  
+.menuHamburger > button:hover{
+     border: 2px solid #b8b8b8;
+}
+  
+.iconMenu:hover{
+      color: #b8b8b8;
+}
+  
+.iconMenu{
+      font-size: 1.5rem;
+      color: #1a1a1a;
+}
+  
+  
+.hamburgerMenu{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      /*bottom: 0;*/
+      background-color: #fff;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+      opacity: 0;
+      visibility:hidden;
+      transition: all 0.5s ease;
+      width: 100%;
+      /*z-index: 999;*/
+}
+  
+.hamburgerMenu.visible{
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s ease;
+}
+  
+  
+.hamburgerContainerHeader{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+     /* display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      margin: 0 auto;*/
+}
+  
+.logoHeaderHamburger{
+      display: flex;
+      align-items: center;
+}
+  
+.logoHeaderHamburger img{
+      height: 100px;
+}
+  
+.btnHamburguer{
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+}
+  
+  
+.btnTraslate button {
+      min-width: 130px;
+      height: 40px;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 5px;
+      border: 2px solid #2a2a2a;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+  
+.btnTraslate button:hover{
+      background-color: #2a2a2a;
+      color: #fff;
+}
+  
+.btnDollar button {
+      min-width: 130px;
+      height: 40px;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 5px;
+      border: 2px solid #2a2a2a;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+  
+.btnDollar button:hover{
+      background-color: #2a2a2a;
+      color: #fff;
+}
+  
+  /*fin de la ediccion del header del menu hamburguesa*/
+  
+  /*ediccion del contenido del menu hamburguesa*/
+.containerHamburgerContent{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+      width: 80%;
+      margin: 0 auto;
+      /*display: flex;
+      align-items: center;
+      margin: 0 auto;
+      flex-direction: column;
+      width: 95%;*/
+}
+  
+.element {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid #c6c6c6;
+      width: 100%;
+      /*display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      width: 100%;
+      border-bottom: 1px solid #c6c6c6;*/
+}
+  
+.img img{
+      height: 20vh;
+      border-radius: 5px;
+}
+  
+.section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+      margin: 0 auto;
+     /* display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 58%;*/
+}
+  
+.section > a{
+      position: relative;
+      text-decoration: none;
+      font-size: 1.375em;
+      font-weight: 700;
+}
+  
+.section > a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 4px;
+      background-color: #000;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+}
+    
+.section >  a:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+}
+  
+.section button {
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      /*background-color: transparent;
+      border: none;
+      cursor: pointer;*/
+}
+  
+  /*.section > a:hover{
+      color: #c6c6c6;
+  }*/
+  
+.arrow-right{
+      font-size: 2em;
+}
+  /*fin de la ediccion del contenido del menu hamburguesa*/
+  
+  /*ediccion del "footer" del menu hamburguesa*/
+.footerHamburgerContainer{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+     /* display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      width: 70%;
+      margin: 0 auto;
+      padding: 30px 0;*/
+}
+  
+.textFooter{
+      display: none;
+}
+  
+.iconFooter button{
+      width: 90px; 
+      height: 90px; 
+      background-color: transparent;
+      color: #000;
+      border: none; 
+      border-radius: 50%; 
+      text-align: center; 
+      font-size: 1.5em; 
+      line-height: 90px; 
+      cursor: pointer;  
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+}
+  
+.iconFooter button:hover{
+      background-color: #000;
+      color: #fff;
+}
+  /*fin de la ediccion del "footer" del munu hamburguesa*/
 /*Fin de las edicciones generales*/
 
 /*Edicciones de header*/
@@ -150,18 +476,7 @@ hr {
 .searchInput{
     display: none;
 }
-/*
-.searchBtn{
-    padding: 9px 14px;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    border: 2px solid #3a3a3a;
-    border-radius: 4px;
-    background-color: transparent;
-    cursor: pointer;
-}
-*/
+
 .searchBtn {
     min-width: 130px;
     height: 40px;
@@ -219,7 +534,32 @@ hr {
     align-items: center;
     gap: 1rem;
     text-transform: uppercase;
-    padding-bottom: 15px;
+    padding: 20px 0;
+}
+
+.navInfoPersonal{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navInfoPersonal > a {
+    text-decoration: none;
+    font-size: 1.188em;
+    font-weight: 500;
+    color: #c6c6c6;
+    transition: all 0.3s ease;
+}
+
+
+.navInfoPersonal > a:hover{
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+
+.usernameTitle{
+    padding: 30px 0;
 }
 
 .colorSpecial {
@@ -294,7 +634,7 @@ hr {
     gap: 5rem;
 }
 
-.heroOne{
+.heroOne > form{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -307,7 +647,7 @@ hr {
     padding: 15px 0px;
 }
 
-form{
+.info form{
     display: flex;
     flex-direction: column;
 }
@@ -317,6 +657,29 @@ form{
     flex-direction: column;
 }
 
+.form input{
+    padding: 15px;
+    border: 2px solid #fff;
+    border-bottom: 2px solid #c6c6c6;
+    transition: all 0.3s ease;
+}
+
+.form input:hover{
+    padding: 15px;
+    border: 2px solid #c6c6c6;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus{
+    padding: 15px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+
 .specialForm{
     display: flex;
     align-items: center;
@@ -324,7 +687,29 @@ form{
 
 .specialForm a {
     position: absolute;
-    left: 69%;
+    left: 66%;
+}
+
+.specialForm input{
+    padding: 15px;
+    border: 2px solid #fff;
+    border-bottom: 2px solid #c6c6c6;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.specialForm input:hover{
+    padding: 15px;
+    border: 2px solid #c6c6c6;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.specialForm input:focus{
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
 /*Fin del apartado numero 2*/
@@ -343,7 +728,7 @@ form{
     gap: 1.5rem;
 }
 
-.delivery button {
+.delivery > button {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -355,6 +740,22 @@ form{
     cursor: pointer;
     text-transform: uppercase;
 }
+
+.check{
+    display: none;
+    color: #00C514;
+    font-size: 1.5rem;
+}
+
+.delivery > button:focus .check{
+    display: block;
+}
+
+.delivery > button:focus{
+    color: #000;
+}
+
+
 /*fin del apartado numero 3*/
 
 /*apartado numero 4: los puntos mas cercanos*/
@@ -370,10 +771,26 @@ form{
     padding: 20px 0px;
 }
 
+.checkTwo{
+    display: none;
+    color: #00C514;
+    font-size: 1.5rem;
+}
+
 .option{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    background: #fff;
+    text-align: left;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.option:focus .checkTwo{
+    display: block;
 }
 
 .optionTitle {
@@ -394,94 +811,110 @@ form{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-top: -1.5rem ;
+    margin-top: 2.5rem ;
 }
 
 .btnEdit , .btnDelete{
     width: 100%;
 }
 
-.btnEdit button {
+.btnEdit > button{
+    height: 40px;
+    min-width: 130px;
     width: 95%;
     margin: 0 auto;
-    height: 40px;
-    color: #fff;
-    padding: 5px 25px;
-    font-weight: 600;
-    font-size: 1.063em;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
     position: relative;
     display: flex;
     justify-content: center;
     gap: 0.8rem;
-    outline: none;
-    border: 1px solid #c6c6c6;
+    padding: 5px 25px;
+    background: #fff;
     color: #fff;
-    background: transparent;
+    font-weight: 600;
+    font-size: 1.063em;
+    text-align: center;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
     z-index: 0;
-  }
-
-.btnEdit button:hover:after {
-    bottom: 0;
-    right: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.btnEdit button:after {
+.btnEdit > button::after{
     content: "";
     width: 100%;
     z-index: -1;
     position: absolute;
     height: 100%;
-    bottom: 5px;
+    bottom: 3px;
     right: 5px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
     transition: 0.2s;
-    background-color: #000;
+}
+
+.btnEdit > button:hover{
+    color: #545454;
+}
+
+.btnEdit > button:hover::after{
+    border: 1px solid #545454;
+}
+
+.btnEdit > button:focus{
+    border: 1px solid #000;
+}
+
+.btnDelete > button{
+    height: 40px;
+    min-width: 130px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 5px 25px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.063em;
+    text-align: center;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    z-index: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btnDelete > button::after{
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 3px;
+    right: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.btnDelete > button:hover{
+    color: #545454;
+}
+
+.btnDelete > button:hover::after{
+    border: 1px solid #545454;
+}
+
+.btnDelete > button:focus{
     border: 1px solid #000;
 }
 
 
-.btnDelete button {
-    width: 95%;
-    margin: 0 auto;
-    height: 40px;
-    color: #fff;
-    padding: 5px 25px;
-    font-weight: 600;
-    font-size: 1.063em;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-    outline: none;
-    border: 1px solid #c6c6c6;
-    color: #000;
-    background: transparent;
-    z-index: 0;
-  }
-
-.btnDelete button:hover:after {
-    bottom: 0;
-    right: 0;
-}
-
-.btnDelete button:after {
-    content: "";
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    bottom: 5px;
-    right: 5px;
-    transition: 0.2s;
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid #000;
-}
 /*fin del apartado 4*/
 
 /*apartado 5: detalles del pedido*/
