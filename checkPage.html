@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/checkPage.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +16,7 @@
     <title>PAGINA DE PAGO</title>
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <div class="alert">
             <button class="headerExclusive">App exclusiva 33% off <i class="bi bi-arrow-right arrowRight"></i></button>
         </div>
@@ -170,7 +173,7 @@
 
                 <div class="infoPersonal">
 
-                    <div class="text">
+                    <div class="text" data-aos="fade-right">
                         <nav class="navInfoPersonal">
                             <a href="#">Inicio <i class="bi bi-arrow-right"></i></a>
                             <a href="#">Mi bolsa <i class="bi bi-arrow-right"></i></a>
@@ -178,7 +181,7 @@
                         <h3>Pagina de pago</h3>
                     </div>
 
-                    <div class="title">
+                    <div class="title"  data-aos="fade-left">
                         <h2>Pagina de pago</h2>
                     </div>
                 </div>
@@ -187,7 +190,7 @@
 
                 <div class="init">
 
-                    <div class="sectionPage">
+                    <div class="sectionPage" data-aos="zoom-in">
 
                         <div class="sectionActive">
                             <h2>1. Opcion de delivery</h2> <i class="bi bi-arrow-right arrowRightDisable"></i> <i class="bi bi-arrow-down arrowDownActive"></i>
@@ -212,7 +215,7 @@
                     <hr class="finalSectionPage">
     
 
-                    <div class="presentation">
+                    <div class="presentation" data-aos="zoom-in">
     
                         <div class="welcome">
     
@@ -238,7 +241,7 @@
 
                 <div class="heroContainer">
 
-                    <form class="heroOne">
+                    <form class="heroOne" data-aos="fade-right">
 
                         <div class="info">
 
@@ -359,7 +362,7 @@
                     <hr>
                    
 
-                    <div class="heroTwo">
+                    <div class="heroTwo" data-aos="fade-left"> 
 
                         <div class="orderDetails">
 
@@ -506,7 +509,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up">
         <div class="containerFooter">
         
             <div class="infoFooter">
@@ -566,5 +569,14 @@
 </footer>
     
 <script src="./js/checkpage.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration:1500,
+    });
+</script>
+
 </body>
 </html>
